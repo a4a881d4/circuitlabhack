@@ -1,0 +1,278 @@
+html, body {
+  height:100%;
+  overflow:hidden;
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+div.popup_container {
+  position:absolute;
+  background-color:#454857; 
+  overflow:hidden;
+  padding:.5em;
+}
+
+.popup_link {
+  color:#454857;
+}
+
+#simulate_container {
+  left: 8px;
+}
+div.popup_content {
+  background-color:#72818B;
+  padding:.5em;
+  overflow:auto;
+}
+
+div.graph_content {
+}
+
+div#toolbox{
+  width:11em;
+  left:8px;
+  margin:0;
+  border:0;
+  overflow:hidden;
+}
+
+
+.toolbox_button{
+  float:left;
+  margin-bottom:.2em;
+  cursor:pointer;
+  font-size: .8em !important;
+  width:11.5em;
+}
+
+button.minimize_button {
+  font-size:.5em !important;
+  padding: 1px 1px 1px 1px;
+  width:2.8em;
+  float:right;
+}
+
+button.anal_button {
+  font-size: 6px !important;
+  padding-top: 4px; 
+  padding-left:1px; 
+  padding-right: 1px;
+  padding-bottom: 1px;
+  width:25px;
+  float:right;
+}
+
+div#toolbar {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  margin:0;
+  border:0;
+}
+
+.toolbar_button {
+  margin-left:1em;
+  margin-top:.5em;
+  font-size:.9em !important;
+}
+
+.node-name-content {
+  position:absolute;
+  font-size:.9em !important;
+}
+
+input.node-name-input {
+  margin:0px;
+  padding:0px;
+  font-size.9em;
+}
+
+div#hintbox {
+  font-size:1em;
+  position:absolute;
+  text-align:right;
+  right:0em;
+  padding:3px;
+}
+
+div.anal_cell{
+  min-height:1.5em;
+  float:left;
+  word-wrap:break-word;
+}
+div.anal_row{
+}
+div.anal_val{
+  width:60px;
+  text-align:right;
+}
+div.anal_key_err {
+  color:#FF0000;
+}
+div.anal_key{
+  width:150px;
+}
+div.anal_key_short{
+  width:120px;
+}
+div.anal_close{
+  width:25px;
+  margin-left:3px;
+}
+div.anal_data{
+  width:240px;
+  font-size:10pt;
+}
+
+div.editor_message_box a {
+  text-decoration:underline;
+}
+
+div.editor_message_box {
+  text-align:center;
+  position:relative;
+  top:80px;
+}
+
+a.mode_choose_anchor {
+  text-decoration:underline;
+  font-size:8pt;
+  color:#404040;
+}
+
+.clear{
+  clear:both;
+}
+div.toolbox_spacer {
+  clear:both;
+  background: #333;
+  padding: 2px;
+  color: #bbb;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 13px;
+  box-shadow: 0px 0px 3px #ccc;
+  margin: 3px 0px;
+}
+div#toolbox_content {
+  padding: 0px;
+}
+div#toolbar_zoom_div {
+  float:right;
+  width:200px;
+}
+input#zoom_input {
+  margin-left:7px;
+  margin-right:7px;
+  margin-top:7px;
+  width:80px;
+}
+button.zoom_button {
+  font-size:.9em !important;
+}
+div.sweep_param_header {
+  width:180px;
+  margin-top:5px;
+  margin-bottom:8px;
+}
+
+ul.ag_axis {
+  background-color:none;
+  list-style-type:none;
+  padding:5px;
+  margin:5px;
+  min-height:100px;
+}
+li.ag_trace {
+  font-size:14px;
+  margin:5px;
+  padding:5px;
+  min-height:20px;
+  /*background-color:#7F9AA5;*/
+  cursor:move;
+}
+.sortable_placeholder {
+  background-color:white;
+  min-height:20px;
+  margin:5px;
+  padding:5px;
+}
+
+div.ag_graph {
+
+ }
+div.ag_graph_holder {
+  color:#000;
+  padding:10px;
+  margin:10px;
+  /*background-color:#273338;*/
+}
+div.ag_new_axis {
+  float:left;
+  margin:5px;
+  border:5px;
+  border-style:dashed; 
+  text-align:center;
+  font-size:15px;
+  padding-top:40px;
+  padding-bottom:40px;
+  padding-left:10px;
+  padding-right:10px;
+}
+div.new_graph_droppable {
+  margin:10px;
+  border:5px;
+  border-style:dashed; 
+  text-align:center;
+  font-size:20px;
+}
+div.new_graph_droppable_text {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.droppable_hover {
+  opacity:0.6;
+}
+div.axis_holder {
+  padding:5px;
+  margin:5px;
+  min-width:150px;
+  min-height:100px;
+  float:left;
+  /*background-color:#639BBF;*/
+}
+div.ag_graph_number{
+  padding:5px;
+  margin:5px;
+  cursor:move;
+}
+.ag_graph_placeholder{
+  color:#000;
+  padding:10px;
+  margin:10px;
+  /*background-color:#273338;*/
+  height:100px;
+}
+.jqplot-yaxis {
+  min-width:80px;
+}
+.jqplot-y2axis {
+  min-width:80px;
+}
+div.graph_title {
+  font-size:15px;
+  text-align:center;
+}
+label.axis_option_label {
+  font-size:10px;
+  display:inline-block;
+  width:100px;
+}
+select.axis_option_select {
+  width:100px;
+}
+
+
