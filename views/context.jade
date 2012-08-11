@@ -1,0 +1,70 @@
+ul.context-menu.dropdown-menu
+    li.contextmenu_graph.contextmenu_graph_legend_show
+        a.menu_graph_show_legend(href='#') Show Graph Legend
+      li.contextmenu_graph.contextmenu_graph_legend_hide
+        a.menu_graph_hide_legend(href='#') Hide Graph Legend
+      li.contextmenu_graph
+        a.menu_graph_reset_zoom(href='#') Reset Zoom
+      li.contextmenu_graph.divider
+      li.contextmenu_sim
+        a.menu_tobuild(href='#') Go To Build Mode
+      li.contextmenu_edit.menu_needs_single
+        a.menu_edit_params(href='#') Edit Parameters
+      li.contextmenu_edit.menu_needs_single.divider
+      li.contextmenu_edit.menu_needs_selected
+        a.menu_delete(href='#')
+          span.keyboard-shortcut Del
+          | Delete
+      li.contextmenu_edit.menu_needs_selected
+        a.menu_cut(href='#')
+          span.keyboard-shortcut Ctrl+X
+          | Cut
+      li.contextmenu_edit.menu_needs_selected
+        a.menu_copy(href='#')
+          span.keyboard-shortcut Ctrl+C
+          | Copy
+      li.contextmenu_edit
+        a.menu_paste(href='#')
+          span.keyboard-shortcut Ctrl+V
+          | Paste
+      li.contextmenu_edit.divider
+      li.contextmenu_edit.menu_needs_single
+        a.menu_rotate_cw(href='#')
+          span.keyboard-shortcut R
+          | Rotate CW
+      li.contextmenu_edit.menu_needs_single
+        a.menu_rotate_ccw(href='#')
+          span.keyboard-shortcut Shift+R
+          | Rotate CCW
+      li.contextmenu_edit.menu_needs_single
+        a.menu_flip_hor(href='#')
+          span.keyboard-shortcut H
+          | Flip Horizontally
+      li.contextmenu_edit.menu_needs_single
+        a.menu_flip_vert(href='#')
+          span.keyboard-shortcut V
+          | Flip Vertically
+      li.divider.contextmenu_edit.menu_needs_single
+      li.contextmenu_edit
+        a.menu_undo(href='#')
+          span.keyboard-shortcut Ctrl+Z
+          | Undo
+      li.contextmenu_edit
+        a.menu_select_all(href='#')
+          span.keyboard-shortcut Ctrl+A
+          | Select All
+      li.divider
+      li
+        a.menu_run_dc(href='#') DC Simulation
+      li
+        a.menu_run_dcsweep(href='#') DC Sweep
+      li
+        a.menu_run_time(href='#') Time Domain Simulation
+      li
+        a.menu_run_frequency(href='#') Frequency Domain Simulation
+      li
+        a.menu_run_last(href='#')
+          span.keyboard-shortcut F5
+          | Run Last Simulation
+          span.keyboard-shortcut-decoy F5
+

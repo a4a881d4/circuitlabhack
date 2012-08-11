@@ -1,0 +1,146 @@
+.navbar.editor
+    .navbar-inner
+        #editor_logoholder.ignore_touch
+          a#topbar_logo_link(rel='external', href='https://www.circuitlab.com/')
+            img(src='https://www.circuitlab.com/assets/images/topbar_logo_40_2x.png', width='138', height='40', alt='CircuitLab', style='width: 138px; height: 40px;')
+        ul.nav
+          li#menu_file.dropdown
+            a.dropdown-toggle(href='#menu_file')
+              | File
+              b.caret
+            ul.dropdown-menu
+              li
+                a.menu_new(href='#') New
+              li
+                a.menu_open(rel='external', href='/workbench/') Open
+              li
+                a.menu_save(href='#')
+                  span.keyboard-shortcut Ctrl+S
+                  | Save
+              li
+                a.menu_save_as(href='#')
+                  span.keyboard-shortcut Ctrl+Shift+S
+                  | Save As
+                  span.keyboard-shortcut-decoy Ctrl+Shift+S
+              li.divider
+              li
+                a.menu_export_pdf(href='#') Print/Export PDF
+              li
+                a.menu_export_png(href='#') Export PNG
+              li
+                a.menu_export_eps(href='#') Export EPS
+              li
+                a.menu_export_svg(href='#') Export SVG
+              li
+                a.menu_export_svgz(href='#') Export SVGZ
+              li.divider
+              li
+                a(href='/') Close
+              //
+                 <li class='divider'></li> 
+          li#menu_edit.dropdown
+            a.dropdown-toggle(href='#menu_edit')
+              | Edit
+              b.caret
+            ul.dropdown-menu
+              li
+                a.menu_undo(href='#')
+                  span.keyboard-shortcut Ctrl+Z
+                  | Undo
+              //
+                <li><a href='#'><span class='keyboard-shortcut'>Ctrl+Shift+Z</span>Redo</a></li>
+              li.divider
+              li
+                a.menu_delete(href='#')
+                  span.keyboard-shortcut Del
+                  | Delete
+              li
+                a.menu_cut(href='#')
+                  span.keyboard-shortcut Ctrl+X
+                  | Cut
+              li
+                a.menu_copy(href='#')
+                  span.keyboard-shortcut Ctrl+C
+                  | Copy
+              li
+                a.menu_paste(href='#')
+                  span.keyboard-shortcut Ctrl+V
+                  | Paste
+              li.divider
+              li
+                a.menu_rotate_cw(href='#')
+                  span.keyboard-shortcut R
+                  | Rotate CW
+              li
+                a.menu_rotate_ccw(href='#')
+                  span.keyboard-shortcut Shift+R
+                  | Rotate CCW
+              li
+                a.menu_flip_hor(href='#')
+                  span.keyboard-shortcut H
+                  | Flip Horizontally
+              li
+                a.menu_flip_vert(href='#')
+                  span.keyboard-shortcut V
+                  | Flip Vertically
+              li.divider
+              li
+                a.menu_zoom_in(href='#')
+                  span.keyboard-shortcut Ctrl+
+                  | Zoom In
+              li
+                a.menu_zoom_out(href='#')
+                  span.keyboard-shortcut Ctrl-
+                  | Zoom Out
+              li
+                a.menu_zoom_to_fit(href='#') Zoom to Fit
+              li.divider
+              li
+                a.menu_select_all(href='#')
+                  span.keyboard-shortcut Ctrl+A
+                  | Select All
+              li
+                a(href='#')
+                  span.keyboard-shortcut Ctrl+Shift+A
+                  | Select None
+                  span.keyboard-shortcut-decoy Ctrl+Shift+A
+          li#menu_run.dropdown
+            a.dropdown-toggle(href='#menu_run')
+              | Run
+              b.caret
+            ul.dropdown-menu
+              li
+                a.menu_run_dc(href='#') DC Simulation
+              li
+                a.menu_run_dcsweep(href='#') DC Sweep
+              li
+                a.menu_run_time(href='#') Time Domain Simulation
+              li
+                a.menu_run_frequency(href='#') Frequency Domain Simulation
+              li.divider
+              li
+                a.menu_run_last(href='#')
+                  span.keyboard-shortcut F5
+                  | Run Last Simulation
+          li#menu_help.dropdown
+            a.dropdown-toggle(href='#menu_help')
+              | Help
+              b.caret
+            ul.dropdown-menu.ignore_touch
+              li
+                a.menu_documentation(rel='external', href='/docs/') Documentation
+              li#menu_item_touch(style='display: none;')
+                a.menu_touch(rel='external', href='/docs/touch/') Mobile Browser
+              li
+                a.menu_support_forums(rel='external', href='/forums/') Support Forums
+              li
+                a.menu_examples(rel='external', href='/user/CircuitLab/') Examples
+              li.divider
+              li
+                a.menu_about(rel='external', href='/about/') About CircuitLab
+        #editor_topbar_rightbox.ignore_touch
+          p#topbar_rightbox_line1           
+          p#topbar_rightbox_line2
+            span#unsaved_changes_warn
+            span#circuit_info Now editing: Unnamed Circuit
+
